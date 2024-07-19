@@ -5,11 +5,13 @@
 
 ![image](https://github.com/user-attachments/assets/4c43e77e-7568-4cb9-bae7-88e68444c188)
 
-#Tecnologia
+# Tecnologia
 
+- TypeScript
+- CSS
+- JavaScript
 
-
-#Projeto
+# Projeto
 
 - Criando no diretorio: npx create-next-app@latest nomedoprojeto
 - Dependencia de icones: npm i @tabler/icons-react
