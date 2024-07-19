@@ -30,12 +30,12 @@ export default function AreaItemCarrinho(props: AreaItemCarrinhoProps) {
                     <span>{props.item.quantidade}</span>
                     <span>=</span> 
                     <span className="text-yellow-500">
-                        R$ {(props.item.produto.preco * props.item.quantidade).toFixed(2)} // Preço total do item (preço unitário x quantidade)
+                        R$ {(props.item.produto.preco * props.item.quantidade).toFixed(2)} 
                     </span>
                 </div>
             </div>
             <div className="flex gap-2 items-center px-5"> 
-                <button onClick={() => props.remover?.(props.item)}> // Botão de remover item, chama a função remover se definida
+                <button onClick={() => props.remover?.(props.item)}> 
                     <IconMinus /> //
                 </button>
                 <span className="flex px-4 py-2 rounded-md bg-black">{props.item.quantidade}</span> 

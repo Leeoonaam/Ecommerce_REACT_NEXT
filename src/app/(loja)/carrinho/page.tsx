@@ -24,7 +24,7 @@ export default function PaginaCarrinho() {
                 <CarrinhoVazio /> // Renderiza o componente CarrinhoVazio se não houver itens
             ) : ( // Caso contrário, renderiza os itens do carrinho
                 <>
-                    // Contêiner para os itens do carrinho com classes de estilo
+                    
                     <div className="flex flex-col gap-5"> 
                         {itens.map((item) => ( // Itera sobre os itens do carrinho
                             <AreaItemCarrinho
@@ -35,7 +35,7 @@ export default function PaginaCarrinho() {
                             />
                         ))}
                     </div>
-                    // Renderiza o componente TotalCarrinho passando os itens como prop
+                    
                     <TotalCarrinho itens={itens} /> 
                 </>
             )}
