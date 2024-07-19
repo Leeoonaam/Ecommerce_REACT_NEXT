@@ -1,7 +1,11 @@
+import useCarrinho from "@/data/hooks/useCarrinho";
 import { IconShoppingCart } from "@tabler/icons-react";
 import Link from "next/link";
 
 export default function Carrinho(){
+
+    const { qtdItens } = useCarrinho()
+
     return (
         
         <Link href="/carrinho">
@@ -15,7 +19,7 @@ export default function Carrinho(){
                             flex justify-center items-center
                             text-xs
                         " >
-                            99
+                            {qtdItens}
                 </div>
             </div>
         </Link>
